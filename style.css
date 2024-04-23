@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+ 
+  body {
+    background-color: #2E5BE0;
+    font-size: 16px;
+  }
+  
+ 
+  header {
+    background-color: #2E5BE0;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 5%;
+}
+  
+
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 20px auto;
+  }
+  
+ 
+
+
+  .left-article {
+    width: 50%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .left-article form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .left-article label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .left-article input,
+  .left-article select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .left-article select {
+    width: 150px;
+  }
+  
+  .colors_section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.colors {
+    width: calc(8% - 10px);
+    padding-top: calc(8% - 10px);
+    background-color: #ccc;
+    margin: 5px;
+    box-sizing: border-box;
+    border-radius: 20%;
+}
+
+
+.colors:nth-child(1) {
+    background-color: #2FE03F;
+  }
+  
+  .colors:nth-child(2) {
+    background-color: #E0AE2F;
+  }
+  
+  .colors:nth-child(3) {
+    background-color: #2F5EE0;
+  }
+  
+  .colors:nth-child(4) {
+    background-color: #E02F6B;
+  }
+
+
+  .right-article {
+    width: 50%;
+    padding: 20px;
+    margin-left: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 100px;
+}
+
+
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50% #000;
+}
+
+span{
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.information {
+    flex: 1;
+    margin-left: 20px;
+    background-color: #E0AE2F;
+}
+
+.information ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.information li {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+  footer {
+    text-align: center;
+    background-color: #2E5BE0;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+  }
