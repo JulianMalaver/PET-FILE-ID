@@ -13,35 +13,37 @@
     <main class="main-container">
         <article class="left-article">
             <h2>INFORMACION DE TU MASCOTA</h2>
-            <form action="">
-                <label htmlFor="">Nombre de tu mascota</label>
-                <input type="text" />
-                <label htmlFor="">Color</label>
-                <input type="text" />
-                <label htmlFor="">Sexo</label>
-                <select name="" id="">
-                    <option value="">M</option>
-                    <option value="">F</option>
-                </select>
-                <label htmlFor="">Especie</label>
-                <select name="" id="">
-                    <option value="">Perro</option>
-                    <option value="">Gato</option>
-                    <option value="">Pez</option>
-                    <option value="">Cerdito</option>
-                    <option value="">Piquirito</option>
-                </select>
-                <label htmlFor="">Raza</label>
-                <select name="" id="">
-                    <option value="">Raza 1</option>
-                    <option value="">Raza 2</option>
-                </select>
-                <label htmlFor="">Fecha de Nacimiento</label>
-                <input type="date" />
-                <label htmlFor="">Propietario de la mascota</label>
-                <input type="text" />
+            <form method="post" action="{% url 'formulario_mascota' %}">
+                {% csrf_token %}
+                <label for="nombre">Nombre de tu mascota:</label>
+                <input type="text" name="nombre" required><br>
+                <label for="color">Color:</label>
+                <input type="text" name="color"><br>
+                <label for="sexo">Sexo:</label>
+                <select name="sexo" id="sexo">
+                    <option value="M">Macho</option>
+                    <option value="F">Hembra</option>
+                </select><br>
+                <label for="especie">Especie:</label>
+                <select name="especie" id="especie">
+                    <option value="Perro">Perro</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Pez">Pez</option>
+                    <option value="Cerdito">Cerdito</option>
+                    <option value="Piquirito">Piquirito</option>
+                </select><br>
+                <label for="raza">Raza:</label>
+                <select name="raza" id="raza">
+                    <option value="Raza 1">Raza 1</option>
+                    <option value="Raza 2">Raza 2</option>
+                </select><br>
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" name="fecha_nacimiento"><br>
+                <label for="propietario">Propietario de la mascota:</label>
+                <input type="text" name="propietario"><br>
                 <h2> Adjunta una foto de tu mascota</h2>
-                <input type="button" value="Adjunta aquí"/>
+                <input type="file" name="foto"><br> <!-- Cambiado a input de tipo file para adjuntar una foto -->
+                <input type="submit" value="Enviar">
             </form>
 
             <h2>Color del carnet</h2>
