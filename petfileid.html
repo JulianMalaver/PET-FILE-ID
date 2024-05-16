@@ -13,10 +13,9 @@
     <main class="main-container">
         <article class="left-article">
             <h2>INFORMACION DE TU MASCOTA</h2>
-            <form method="post" action="{% url 'formulario_mascota' %}">
-                {% csrf_token %}
-                <label for="nombre">Nombre de tu mascota:</label>
-                <input type="text" name="nombre" required><br>
+            <form method="post" action="http://127.0.0.1:8000/users">
+                <label for="name">Nombre de tu mascota:</label>
+                <input type="text" name="name" required><br>
                 <label for="color">Color:</label>
                 <input type="text" name="color"><br>
                 <label for="sexo">Sexo:</label>
